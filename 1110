@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		int count = 0;		
+		int s = 0;
+		int n = scanner.nextInt();
+		int x = n;
+		while(true){
+			int a = n/10;
+			int b = n%10;
+			s = (a + b)%10;
+			n = (b*10) + s;
+			count++;
+			if(x == n)
+				break;
+		}
+		System.out.println(""+count+"");
+		scanner.close();
+	}
+
+}
