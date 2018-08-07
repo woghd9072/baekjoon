@@ -1,2 +1,2 @@
 # baekjoon
-풀이
+JAVA 풀이
